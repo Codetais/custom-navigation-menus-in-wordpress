@@ -1,0 +1,79 @@
+/*
+Theme Name: Menu
+Theme URI: https://codetai.com
+Author: Codetai
+Author URI: https://codetai.com
+Description: this a custom menu tutorial video
+Version: 1.0
+Tags:codetai,menu,logo
+Text Domain: menu
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: #67c27c;
+}
+.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #67c27c;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+    }
+    nav ul li a:hover{
+        color: white;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #67c27c;
+    }
+}
